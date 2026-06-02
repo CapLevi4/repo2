@@ -5,18 +5,18 @@
 #profile-update-interval: 1
 #subscription-userinfo: upload=0; download=0; total=0
 
-vless://16c6faa4-1162-49ca-acf7-059afdf1ecd3@91.107.189.143:29039?headertype=none&security=&telegram=%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%E2%80%94%20%23946
-vless://16c6faa4-1162-49ca-acf7-059afdf1ecd3@91.107.189.143:29039?type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%E2%80%94%20%23963
-vless://16c6faa4-1162-49ca-acf7-059afdf1ecd3@91.107.189.143:29039?headertype=none&security=&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%E2%80%94%20%231006
-vless://16c6faa4-1162-49ca-acf7-059afdf1ecd3@91.107.189.143:29039?headertype=&security=&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%E2%80%94%20%23987
-vless://16c6faa4-1162-49ca-acf7-059afdf1ecd3@91.107.189.143:29039?alpn=http%252F1.1&fp=chrome&headertype=none&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%E2%80%94%20%23982
-vless://16c6faa4-1162-49ca-acf7-059afdf1ecd3@91.107.189.143:29039?security=&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%E2%80%94%20%23945
 vless://16c6faa4-1162-49ca-acf7-059afdf1ecd3@91.107.189.143:29039?type=tcp&headerType=none&security=none&encryption=none#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%E2%80%94%20%231162
+vless://16c6faa4-1162-49ca-acf7-059afdf1ecd3@91.107.189.143:29039?alpn=http%252F1.1&fp=chrome&headertype=none&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%E2%80%94%20%23982
+vless://16c6faa4-1162-49ca-acf7-059afdf1ecd3@91.107.189.143:29039?headertype=none&security=&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%E2%80%94%20%231006
+vless://16c6faa4-1162-49ca-acf7-059afdf1ecd3@91.107.189.143:29039?headertype=none&security=&telegram=%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%E2%80%94%20%23946
 vless://16c6faa4-1162-49ca-acf7-059afdf1ecd3@91.107.189.143:29039#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%E2%80%94%20%23710
+vless://16c6faa4-1162-49ca-acf7-059afdf1ecd3@91.107.189.143:29039?type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%E2%80%94%20%23963
 vless://16c6faa4-1162-49ca-acf7-059afdf1ecd3@91.107.189.143:29039?encryption=none&security=none&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%E2%80%94%20%233979
 vless://16c6faa4-1162-49ca-acf7-059afdf1ecd3@91.107.189.143:29039?headertype=none&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%E2%80%94%20%231018
+vless://16c6faa4-1162-49ca-acf7-059afdf1ecd3@91.107.189.143:29039?headertype=&security=&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%E2%80%94%20%23987
 vless://16c6faa4-1162-49ca-acf7-059afdf1ecd3@91.107.189.143:29039?headertype=&security=&telegram=%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%E2%80%94%20%23949
-vless://5a20b5d0-3a98-4792-9559-95f4e24277ec@155.117.127.137:443?headertype=none&security=&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20%E2%80%94%20%23935
+vless://16c6faa4-1162-49ca-acf7-059afdf1ecd3@91.107.189.143:29039?security=&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%E2%80%94%20%23945
+vless://5a20b5d0-3a98-4792-9559-95f4e24277ec@155.117.127.137:443?security=&telegram=%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20%E2%80%94%20%23989
 vless://5a20b5d0-3a98-4792-9559-95f4e24277ec@155.117.127.137:443?allowInsecure=0#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20%E2%80%94%20%23698
 vless://5a20b5d0-3a98-4792-9559-95f4e24277ec@155.117.127.137:443?#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20%E2%80%94%20%23716
-vless://5a20b5d0-3a98-4792-9559-95f4e24277ec@155.117.127.137:443?descriptions=%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D1%83%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82%D1%8347&telegram=%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20%E2%80%94%20%23701
+vless://5a20b5d0-3a98-4792-9559-95f4e24277ec@155.117.127.137:443?path=%2F&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20%E2%80%94%20%23993

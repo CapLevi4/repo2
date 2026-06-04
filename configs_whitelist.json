@@ -25,13 +25,22 @@
       "settings": {
         "vnext": [
           {
-            "address": "87.228.101.37",
-            "port": 443,
-            "users": [{"id":"45de618c-2b9f-49b6-a70b-36f918c217ed","encryption":"none","flow":"xtls-rprx-vision"}]
+            "address": "balanced-shared-tun.vkproxy.com",
+            "port": 8443,
+            "users": [{"id":"8f7d1918-d041-4706-83e5-46941cb5ff7b","encryption":"none","flow":"xtls-rprx-vision"}]
           }
         ]
       },
-      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"m.vk.com","fingerprint":"firefox","publicKey":"HhzAvJmqEjt_CeifAJmDfg7DgeD2t2cvzWqvyyPSVz0","shortId":"664b8a28e735af5f","spiderX":"/"}}
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "sun6-21.userapi.com",
+          "fingerprint": "chrome",
+          "publicKey": "ZSzB9TQPGNcCiC0WLmciF5Jc8doJDvdRgbqTi8SCoEM",
+          "shortId": "a1b2c3d4e5f6789a"
+        }
+      }
     },
     {
       "tag": "direct",

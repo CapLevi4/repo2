@@ -26,12 +26,12 @@
         "vnext": [
           {
             "address": "46.254.17.182",
-            "port": 9001,
-            "users": [{"id":"0b6797a0-ebf7-4819-986c-fd4c7ec6850e","encryption":"none","flow":"xtls-rprx-vision"}]
+            "port": 41934,
+            "users": [{"id":"d2cc114e-705d-4680-a6a9-751958660619","encryption":"none","flow":"xtls-rprx-vision"}]
           }
         ]
       },
-      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"ads.x5.ru","fingerprint":"chrome","publicKey":"wIOabE8h8d0f8PvpY1-xkOOagFS_0WT_SAsWj1OYszI","shortId":"a3"}}
+      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"ads.x5.ru","fingerprint":"chrome","publicKey":"wIOabE8h8d0f8PvpY1-xkOOagFS_0WT_SAsWj1OYszI","shortId":"e91339df"}}
     },
     {
       "tag": "direct",

@@ -25,7 +25,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "test.pale-moose.test-cdn-kkk.com",
+            "address": "test.fast-helm.test-cdn-kkk.com",
             "port": 443,
             "users": [{"id":"f0d4a22c-e51f-4e21-841f-313178b07a23","encryption":"none","flow":"xtls-rprx-vision"}]
           }

@@ -25,13 +25,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "msk2.ow-pk.ru",
-            "port": 55519,
-            "users": [{"id":"08ae0f55-44d0-4b0a-985a-1f8090fb86ab","encryption":"none","flow":"xtls-rprx-vision"}]
+            "address": "test.pale-moose.test-cdn-kkk.com",
+            "port": 443,
+            "users": [{"id":"f0d4a22c-e51f-4e21-841f-313178b07a23","encryption":"none","flow":"xtls-rprx-vision"}]
           }
         ]
       },
-      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"kredopro.ru","fingerprint":"chrome","publicKey":"azltJAmyoOGjY31Za_15MGXzKsiubcGHyybk6cjXpCA","shortId":"ac79a2af","spiderX":"/09s0BnrhI2xfF3q"}}
+      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"ads.x5.ru","fingerprint":"qq","publicKey":"-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw","shortId":"50"}}
     },
     {
       "tag": "direct",

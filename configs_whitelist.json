@@ -25,13 +25,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ru-lv.illusion-vpn.ru",
+            "address": "ru3.sipipro.su",
             "port": 443,
-            "users": [{"id":"bee8df77-2780-5a7b-b005-9da84fcb7aaf","encryption":"none","flow":"xtls-rprx-vision"}]
+            "users": [{"id":"db62e9f2-49a3-4e9d-a59b-0bf77f102420","encryption":"none","flow":""}]
           }
         ]
       },
-      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"ru-lv.illusion-vpn.ru","fingerprint":"firefox","publicKey":"86DiKd_LyZ_9L4WyaADZsNJH5wnaTGoZyywz0CGFYwg","shortId":"9ec378e393a94f","spiderX":"/"}}
+      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"ya.ru","fingerprint":"qq","publicKey":"NsPdlzraIawCLwtIUGk5demmtYJcBedeR_3qA2kvMF0","shortId":"eacc9f154bc36612"}}
     },
     {
       "tag": "direct",

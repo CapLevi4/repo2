@@ -27,7 +27,7 @@
           {
             "address": "31.207.75.53",
             "port": 443,
-            "users": [{"id":"47a4af07-1c38-4fc0-abcf-c564dc347e1b","encryption":"none","flow":"xtls-rprx-vision"}]
+            "users": [{"id":"47a4af07-1c38-4fc0-abcf-c564dc347e1b","encryption":"none"}]
           }
         ]
       },

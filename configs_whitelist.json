@@ -25,13 +25,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.208.208.92",
-            "port": 9443,
-            "users": [{"id":"cbc27e56-38a1-4b0d-bce3-f9e7dcb807a4","encryption":"none","flow":"xtls-rprx-vision"}]
+            "address": "79.174.91.45",
+            "port": 7443,
+            "users": [{"id":"e99c4bfa-39c5-49ca-9904-696fbc0a8977","encryption":"none","flow":"xtls-rprx-vision"}]
           }
         ]
       },
-      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"loadtest.dev.urent.ru","fingerprint":"chrome","publicKey":"aVu6XB9_RKR1xLtusyQ1_YOWCs4Ofi9GEJd6oERNH2Q","shortId":"689def22fcb54e86"}}
+      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"5post-gate.x5.ru","fingerprint":"firefox","publicKey":"5tUy6yxqdIDuncx4zBJR7r3UN7AxKDVdbUGEP5Qdhxk","shortId":"fc677168"}}
     },
     {
       "tag": "direct",

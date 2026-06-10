@@ -25,13 +25,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.250.43.93",
+            "address": "72.56.11.76",
             "port": 443,
-            "users": [{"id":"f37930a7-a60a-40ba-929b-86790a38496a","encryption":"none","flow":"xtls-rprx-vision"}]
+            "users": [{"id":"959fde23-35b9-4266-95fb-d267e62e38e4","encryption":"none","flow":"xtls-rprx-vision"}]
           }
         ]
       },
-      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"ads.x5.ru","fingerprint":"firefox","publicKey":"MXpxhnU1ctGMXbGGjIrtDfjRX-BbbpsjnS4-SUv3OFs"}}
+      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"sellflow.org","fingerprint":"chrome","publicKey":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"}}
     },
     {
       "tag": "direct",

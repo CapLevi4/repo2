@@ -25,13 +25,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bypass.de-dp-01.com",
-            "port": 8443,
-            "users": [{"id":"512f01f4-d8fc-4a78-96a0-5d9ebebe35b9","encryption":"none","flow":"xtls-rprx-vision"}]
+            "address": "193.39.168.51",
+            "port": 443,
+            "users": [{"id":"9ad4f937-6366-0001-9d7e-e2a694deb4e2","encryption":"none","flow":"xtls-rprx-vision"}]
           }
         ]
       },
-      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"storage.yandex.net","fingerprint":"firefox","publicKey":"ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo","shortId":"5be97fb85093a3a9"}}
+      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"pro-ru-bridge.emrata.top","fingerprint":"firefox","publicKey":"F8tqvcuJUSVbxv_i9ZsVOef3EPwULzzDqgvmj3vWNlA"}}
     },
     {
       "tag": "direct",

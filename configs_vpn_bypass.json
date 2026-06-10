@@ -32,16 +32,13 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "ya.ru",
+          "serverName": "www.microsoft.com",
           "fingerprint": "chrome",
           "publicKey": "BPMQf4AueHLqTKCT1kRDqd921yyY6zzENz4cQ__gwk8",
           "shortId": "ce7bf8a6"
-        },
-        "grpcSettings": {
-          "serviceName": "grpc"
         }
       }
     },

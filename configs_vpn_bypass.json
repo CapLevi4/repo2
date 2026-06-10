@@ -61,11 +61,6 @@
     "rules": [
       {
         "type": "field",
-        "domain": ["geosite:category-ads-all"],
-        "outboundTag": "block"
-      },
-      {
-        "type": "field",
         "ip": ["geoip:ru","geoip:private"],
         "outboundTag": "direct"
       },

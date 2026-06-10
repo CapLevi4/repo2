@@ -35,7 +35,7 @@
         "network": "grpc",
         "security": "reality",
         "realitySettings": {
-          "serverName": "yahoo.com",
+          "serverName": "ya.ru",
           "fingerprint": "chrome",
           "publicKey": "BPMQf4AueHLqTKCT1kRDqd921yyY6zzENz4cQ__gwk8",
           "shortId": "ce7bf8a6"

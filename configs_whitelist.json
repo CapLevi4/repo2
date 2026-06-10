@@ -31,7 +31,7 @@
           }
         ]
       },
-      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"loadtest.dev.urent.ru","fingerprint":"qq","publicKey":"aVu6XB9_RKR1xLtusyQ1_YOWCs4Ofi9GEJd6oERNH2Q","shortId":"689def22fcb54e86"}}
+      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"loadtest.dev.urent.ru","fingerprint":"chrome","publicKey":"aVu6XB9_RKR1xLtusyQ1_YOWCs4Ofi9GEJd6oERNH2Q","shortId":"689def22fcb54e86"}}
     },
     {
       "tag": "direct",

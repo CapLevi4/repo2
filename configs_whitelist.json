@@ -6,14 +6,14 @@
     {
       "tag": "socks",
       "port": 10808,
-      "listen": "0.0.0.0",
+      "listen": "127.0.0.1",
       "protocol": "socks",
       "settings": { "udp": true }
     },
     {
       "tag": "http",
       "port": 10809,
-      "listen": "0.0.0.0",
+      "listen": "127.0.0.1",
       "protocol": "http",
       "settings": {}
     }
@@ -25,25 +25,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.139.91.33",
-            "port": 443,
-            "users": [{"id":"47a4af07-1c38-4fc0-abcf-c564dc347e1b","encryption":"none","flow":"xtls-rprx-vision"}]
+            "address": "de-dp-01.com",
+            "port": 8443,
+            "users": [{"id":"512f01f4-d8fc-4a78-96a0-5d9ebebe35b9","encryption":"none","flow":"xtls-rprx-vision"}]
           }
         ]
       },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "yahoo.com",
-          "fingerprint": "chrome",
-          "publicKey": "_G0KIR6RbyXEWjJVBkGKFQFt4KxSnEHARX_K_2ENzFU",
-          "shortId": "ce7bf8a6"
-        },
-        "grpcSettings": {
-          "serviceName": "grpc"
-        }
-      }
+      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"storage.yandex.net","fingerprint":"firefox","publicKey":"ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo","shortId":"5be97fb85093a3a9"}}
     },
     {
       "tag": "direct",

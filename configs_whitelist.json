@@ -25,13 +25,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "yt6.safepass.click",
-            "port": 443,
-            "users": [{"id":"13bbbb75-2ec5-4262-9784-fe8b6e94510b","encryption":"none","flow":"xtls-rprx-vision"}]
+            "address": "79.174.91.45",
+            "port": 7443,
+            "users": [{"id":"e99c4bfa-39c5-49ca-9904-696fbc0a8977","encryption":"none","flow":"xtls-rprx-vision"}]
           }
         ]
       },
-      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"timeweb.cloud","fingerprint":"chrome","publicKey":"ELp9PUvVnkoFJYiscWrbnPXRnsYdELSCbIz9wNmMRRw","shortId":"965af8960474c29c"}}
+      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"5post-gate.x5.ru","fingerprint":"firefox","publicKey":"5tUy6yxqdIDuncx4zBJR7r3UN7AxKDVdbUGEP5Qdhxk","shortId":"fc677168"}}
     },
     {
       "tag": "direct",

@@ -31,7 +31,7 @@
           }
         ]
       },
-      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"sellflow.org","fingerprint":"chrome","publicKey":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"}}
+      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"sellflow.org","publicKey":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"}}
     },
     {
       "tag": "direct",

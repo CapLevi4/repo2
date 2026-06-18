@@ -55,7 +55,7 @@
                 "vnext": [
                     {
                         "address": "31.207.75.53",
-                        "port": 80,
+                        "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
@@ -71,7 +71,7 @@
                 "realitySettings": {
                     "fingerprint": "chrome",
                     "publicKey": "BPMQf4AueHLqTKCT1kRDqd921yyY6zzENz4cQ__gwk8",
-                    "serverName": "cloudflare.com",
+                    "serverName": "eh.vk.com",
                     "shortId": "ce7bf8a6"
                 },
                 "security": "reality",

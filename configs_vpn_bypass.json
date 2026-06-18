@@ -2,16 +2,19 @@
   "log": {
     "loglevel": "warning"
   },
-  "dns": {
-    "queryStrategy": "UseIP",
-    "servers": ["https://1.1.1.1/dns-query", "https://8.8.8.8/dns-query"]
-  },
   "inbounds": [
     {
-      "protocol": "tun",
-      "tag": "tun",
-      "settings": { "mtu": 1500 },
-      "sniffing": { "destOverride": ["http","tls","quic"], "enabled": true, "routeOnly": false }
+      "tag": "socks",
+      "port": 10808,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "settings": { "udp": true }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "127.0.0.1",
+      "protocol": "http"
     }
   ],
   "outbounds": [

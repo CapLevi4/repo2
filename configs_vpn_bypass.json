@@ -27,7 +27,7 @@
           {
             "address": "31.207.75.53",
             "port": 443,
-            "users": [{"id":"47a4af07-1c38-4fc0-abcf-c564dc347e1b","encryption":"none"}]
+            "users": [{"id":"47a4af07-1c38-4fc0-abcf-c564dc347e1b","encryption":"none","flow":"xtls-rprx-vision"}]
           }
         ]
       },
@@ -35,7 +35,7 @@
         "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "www.microsoft.com",
+          "serverName": "cloudflare.com",
           "fingerprint": "chrome",
           "publicKey": "BPMQf4AueHLqTKCT1kRDqd921yyY6zzENz4cQ__gwk8",
           "shortId": "ce7bf8a6"

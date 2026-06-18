@@ -2,6 +2,10 @@
   "log": {
     "loglevel": "warning"
   },
+  "dns": {
+    "queryStrategy": "UseIP",
+    "servers": ["https://1.1.1.1/dns-query", "https://8.8.8.8/dns-query"]
+  },
   "inbounds": [
     {
       "protocol": "tun",
@@ -46,18 +50,17 @@
     }
   ],
   "routing": {
+    "domainMatcher": "hybrid",
     "domainStrategy": "IPIfNonMatch",
     "rules": [
+      { "outboundTag": "direct", "protocol": ["bittorrent"] },
+      { "ip": ["geoip:ru","geoip:private","8.8.8.8/32","1.1.1.1/32"], "outboundTag": "direct", "type": "field" },
       {
-        "type": "field",
-        "ip": ["geoip:ru","geoip:private"],
-        "outboundTag": "direct"
+        "domain": ["regexp:.*\\.ru$","regexp:.*\\.su$","regexp:.*\\.by$","regexp:.*\\.xn--p1ai$","regexp:^(.+\\.)?mail\\.ru$","regexp:^(.+\\.)?yandex\\.(ru|com|by|ua|kz)$","regexp:^(.+\\.)?vk\\.(com|ru)$","regexp:^(.+\\.)?ok\\.ru$","regexp:^(.+\\.)?ozon\\.ru$","regexp:^(.+\\.)?wb\\.ru$","regexp:^(.+\\.)?wildberries\\.ru$","regexp:^(.+\\.)?avito\\.ru$","regexp:^(.+\\.)?sberbank\\.ru$","regexp:^(.+\\.)?tinkoff\\.ru$","regexp:^(.+\\.)?alfabank\\.ru$","regexp:^(.+\\.)?gazprombank\\.ru$","regexp:^(.+\\.)?vtb\\.ru$","regexp:^(.+\\.)?rzd\\.ru$","regexp:^(.+\\.)?gosuslugi\\.ru$","regexp:^(.+\\.)?mts\\.ru$","regexp:^(.+\\.)?megafon\\.ru$","regexp:^(.+\\.)?beeline\\.ru$","regexp:^(.+\\.)?tele2\\.ru$","regexp:^(.+\\.)?kinopoisk\\.ru$","regexp:^(.+\\.)?rutube\\.ru$"],
+        "outboundTag": "direct",
+        "type": "field"
       },
-      {
-        "type": "field",
-        "network": "tcp,udp",
-        "outboundTag": "proxy"
-      }
+      { "network": "tcp,udp", "outboundTag": "proxy" }
     ]
   }
 }

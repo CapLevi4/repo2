@@ -1,69 +1,120 @@
 {
-  "log": {
-    "loglevel": "warning"
-  },
-  "inbounds": [
-    {
-      "tag": "socks",
-      "port": 10808,
-      "listen": "127.0.0.1",
-      "protocol": "socks",
-      "settings": { "udp": true }
-    },
-    {
-      "tag": "http",
-      "port": 10809,
-      "listen": "127.0.0.1",
-      "protocol": "http"
-    }
-  ],
-  "outbounds": [
-    {
-      "tag": "proxy",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "31.207.75.53",
-            "port": 443,
-            "users": [{"id":"47a4af07-1c38-4fc0-abcf-c564dc347e1b","encryption":"none","flow":"xtls-rprx-vision"}]
-          }
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "https://1.1.1.1/dns-query",
+            "https://8.8.8.8/dns-query"
         ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "cloudflare.com",
-          "fingerprint": "chrome",
-          "publicKey": "BPMQf4AueHLqTKCT1kRDqd921yyY6zzENz4cQ__gwk8",
-          "shortId": "ce7bf8a6"
+    },
+    "inbounds": [
+        {
+            "listen": "127.0.0.1",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "127.0.0.1",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
         }
-      }
+    ],
+    "meta": {
+        "serverDescription": "LEVI VPS"
     },
-    {
-      "tag": "direct",
-      "protocol": "freedom",
-      "settings": {}
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "31.207.75.53",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "flow": "xtls-rprx-vision",
+                                "id": "47a4af07-1c38-4fc0-abcf-c564dc347e1b"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "realitySettings": {
+                    "fingerprint": "chrome",
+                    "publicKey": "BPMQf4AueHLqTKCT1kRDqd921yyY6zzENz4cQ__gwk8",
+                    "serverName": "cloudflare.com",
+                    "shortId": "ce7bf8a6"
+                },
+                "security": "reality",
+                "sockopt": {
+                    "acceptProxyProtocol": true,
+                    "tcpKeepAliveIdle": 45,
+                    "tcpKeepAliveInterval": 45,
+                    "tcpNoDelay": true,
+                    "tcpUserTimeout": 15000
+                },
+                "tcpSettings": {
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "policy": {
+        "levels": {
+            "0": {
+                "connIdle": 300,
+                "handshake": 4
+            }
+        }
     },
-    {
-      "tag": "block",
-      "protocol": "blackhole",
-      "settings": {}
+    "remarks": "LEVI VPS",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ]
+            }
+        ]
     }
-  ],
-  "routing": {
-    "domainMatcher": "hybrid",
-    "domainStrategy": "IPIfNonMatch",
-    "rules": [
-      { "outboundTag": "direct", "protocol": ["bittorrent"] },
-      { "ip": ["geoip:ru","geoip:private","8.8.8.8/32","1.1.1.1/32"], "outboundTag": "direct", "type": "field" },
-      {
-        "domain": ["regexp:.*\\.ru$","regexp:.*\\.su$","regexp:.*\\.by$","regexp:.*\\.xn--p1ai$","regexp:^(.+\\.)?mail\\.ru$","regexp:^(.+\\.)?yandex\\.(ru|com|by|ua|kz)$","regexp:^(.+\\.)?vk\\.(com|ru)$","regexp:^(.+\\.)?ok\\.ru$","regexp:^(.+\\.)?ozon\\.ru$","regexp:^(.+\\.)?wb\\.ru$","regexp:^(.+\\.)?wildberries\\.ru$","regexp:^(.+\\.)?avito\\.ru$","regexp:^(.+\\.)?sberbank\\.ru$","regexp:^(.+\\.)?tinkoff\\.ru$","regexp:^(.+\\.)?alfabank\\.ru$","regexp:^(.+\\.)?gazprombank\\.ru$","regexp:^(.+\\.)?vtb\\.ru$","regexp:^(.+\\.)?rzd\\.ru$","regexp:^(.+\\.)?gosuslugi\\.ru$","regexp:^(.+\\.)?mts\\.ru$","regexp:^(.+\\.)?megafon\\.ru$","regexp:^(.+\\.)?beeline\\.ru$","regexp:^(.+\\.)?tele2\\.ru$","regexp:^(.+\\.)?kinopoisk\\.ru$","regexp:^(.+\\.)?rutube\\.ru$"],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      { "network": "tcp,udp", "outboundTag": "proxy" }
-    ]
-  }
 }

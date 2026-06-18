@@ -4,18 +4,10 @@
   },
   "inbounds": [
     {
-      "tag": "socks",
-      "port": 10808,
-      "listen": "0.0.0.0",
-      "protocol": "socks",
-      "settings": { "udp": true }
-    },
-    {
-      "tag": "http",
-      "port": 10809,
-      "listen": "0.0.0.0",
-      "protocol": "http",
-      "settings": {}
+      "protocol": "tun",
+      "tag": "tun",
+      "settings": { "mtu": 1500 },
+      "sniffing": { "destOverride": ["http","tls","quic"], "enabled": true, "routeOnly": false }
     }
   ],
   "outbounds": [

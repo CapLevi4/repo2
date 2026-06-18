@@ -55,7 +55,7 @@
                 "vnext": [
                     {
                         "address": "31.207.75.53",
-                        "port": 443,
+                        "port": 80,
                         "users": [
                             {
                                 "encryption": "none",

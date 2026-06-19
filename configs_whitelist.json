@@ -25,13 +25,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "144.31.216.98",
-            "port": 8443,
-            "users": [{"id":"cf038a28-8f85-41fc-9e86-ba99a3fdd0d9","encryption":"none","flow":"xtls-rprx-vision"}]
+            "address": "62.152.56.73",
+            "port": 443,
+            "users": [{"id":"21ee439e-6e75-4346-b888-f609a16e5a27","encryption":"none","flow":"xtls-rprx-vision"}]
           }
         ]
       },
-      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"service.mycloudsfere.abrdns.com","publicKey":"Xb-A55KyH9nwjxKw85wksIUJs9KBGk5B8rLArXGVLiw","shortId":"d9654598d4415f95"}}
+      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"wl-12.nodes.ac","fingerprint":"qq","publicKey":"lh3qj3VX335HGH2T3xQ8RHZ4v3zEStbz6ENiPwkILSg","shortId":"cf43c0c197cd464a"}}
     },
     {
       "tag": "direct",

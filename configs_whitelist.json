@@ -25,13 +25,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ru.faygo.bot",
+            "address": "62.152.56.73",
             "port": 443,
-            "users": [{"id":"8ca5cbd3-ec16-4728-bedc-2bc0d82f0922","encryption":"none","flow":"xtls-rprx-vision"}]
+            "users": [{"id":"49585f04-6308-454b-9aff-98605c77762f","encryption":"none","flow":"xtls-rprx-vision"}]
           }
         ]
       },
-      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"enterprisekitten.com","fingerprint":"qq","publicKey":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc","shortId":"6ba85179e30d4fc2"}}
+      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"wl-12.nodes.ac","fingerprint":"edge","publicKey":"lh3qj3VX335HGH2T3xQ8RHZ4v3zEStbz6ENiPwkILSg","shortId":"cf43c0c197cd464a"}}
     },
     {
       "tag": "direct",

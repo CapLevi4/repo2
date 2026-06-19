@@ -25,13 +25,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "158.160.204.211",
-            "port": 8441,
-            "users": [{"id":"c919e592-5639-491e-a9b7-7a201175ae12","encryption":"none","flow":"xtls-rprx-vision"}]
+            "address": "152.233.54.86",
+            "port": 443,
+            "users": [{"id":"fdba43e2-9dc3-4c3e-a890-08ab21e60081","encryption":"none","flow":"xtls-rprx-vision"}]
           }
         ]
       },
-      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"ya.ru","fingerprint":"chrome","publicKey":"Q5mtL2qHRAoPEVnl9GRezCHkTrNTnvW_FL3_HQhhKDo","shortId":"06011ef464e3313f"}}
+      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"auto.malina24.xyz","fingerprint":"firefox","publicKey":"V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ","shortId":"abcd"}}
     },
     {
       "tag": "direct",

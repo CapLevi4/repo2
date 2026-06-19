@@ -31,7 +31,7 @@
           }
         ]
       },
-      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"wl-12.nodes.ac","fingerprint":"edge","publicKey":"lh3qj3VX335HGH2T3xQ8RHZ4v3zEStbz6ENiPwkILSg","shortId":"cf43c0c197cd464a"}}
+      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"wl-12.nodes.ac","fingerprint":"qq","publicKey":"lh3qj3VX335HGH2T3xQ8RHZ4v3zEStbz6ENiPwkILSg","shortId":"cf43c0c197cd464a"}}
     },
     {
       "tag": "direct",

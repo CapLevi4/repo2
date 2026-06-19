@@ -46,7 +46,7 @@
         }
     ],
     "meta": {
-        "serverDescription": "LEVI VPS"
+        "serverDescription": "LEVI VPS (VK Cloud)"
     },
     "outbounds": [
         {
@@ -54,13 +54,13 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "217.114.8.254",
+                        "address": "51.250.90.29",
                         "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
                                 "flow": "xtls-rprx-vision",
-                                "id": "47a4af07-1c38-4fc0-abcf-c564dc347e1b"
+                                "id": "04f35c07-a87d-4afd-8dfd-f922422bd236"
                             }
                         ]
                     }
@@ -70,9 +70,9 @@
                 "network": "tcp",
                 "realitySettings": {
                     "fingerprint": "chrome",
-                    "publicKey": "BPMQf4AueHLqTKCT1kRDqd921yyY6zzENz4cQ__gwk8",
+                    "publicKey": "UMbPEvDbukStlRSU2gY8x4MrNdWR7yzFDFpFXQQr2ks",
                     "serverName": "eh.vk.com",
-                    "shortId": "ce7bf8a6"
+                    "shortId": "bbff8c8d"
                 },
                 "security": "reality",
                 "sockopt": {
@@ -104,7 +104,7 @@
             }
         }
     },
-    "remarks": "LEVI VPS",
+    "remarks": "LEVI VPS (VK Cloud)",
     "routing": {
         "domainMatcher": "hybrid",
         "domainStrategy": "IPIfNonMatch",

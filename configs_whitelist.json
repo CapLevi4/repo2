@@ -27,11 +27,11 @@
           {
             "address": "62.152.56.73",
             "port": 443,
-            "users": [{"id":"21ee439e-6e75-4346-b888-f609a16e5a27","encryption":"none","flow":"xtls-rprx-vision"}]
+            "users": [{"id":"7618dc46-8e88-4f3d-9e96-baee4bd93209","encryption":"none","flow":"xtls-rprx-vision"}]
           }
         ]
       },
-      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"wl-12.nodes.ac","fingerprint":"qq","publicKey":"lh3qj3VX335HGH2T3xQ8RHZ4v3zEStbz6ENiPwkILSg","shortId":"cf43c0c197cd464a"}}
+      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"wl-12.nodes.ac","fingerprint":"edge","publicKey":"lh3qj3VX335HGH2T3xQ8RHZ4v3zEStbz6ENiPwkILSg","shortId":"cf43c0c197cd464a"}}
     },
     {
       "tag": "direct",

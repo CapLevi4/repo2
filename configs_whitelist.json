@@ -25,13 +25,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "158.160.238.73",
-            "port": 543,
-            "users": [{"id":"1dd5f2be-f124-4f35-9239-8abc042829c2","encryption":"none","flow":"xtls-rprx-vision"}]
+            "address": "144.31.216.98",
+            "port": 8443,
+            "users": [{"id":"cf038a28-8f85-41fc-9e86-ba99a3fdd0d9","encryption":"none","flow":"xtls-rprx-vision"}]
           }
         ]
       },
-      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"max.ru","fingerprint":"firefox","publicKey":"ThDXo5FtAi4EYaioYqogBq_NWCwE4QG0Tu6yKMlrfRk","shortId":"d898401f400ccf67"}}
+      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"service.mycloudsfere.abrdns.com","fingerprint":"firefox","publicKey":"Xb-A55KyH9nwjxKw85wksIUJs9KBGk5B8rLArXGVLiw","shortId":"d9654598d4415f95"}}
     },
     {
       "tag": "direct",

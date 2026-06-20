@@ -25,13 +25,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "64.188.79.53",
-            "port": 48161,
-            "users": [{"id":"72362320-3c4c-42cf-b76c-82f7b1832c47","encryption":"none","flow":"xtls-rprx-vision"}]
+            "address": "62.152.56.73",
+            "port": 443,
+            "users": [{"id":"cc09d900-f40b-4b64-a401-f67c2d682af7","encryption":"none","flow":"xtls-rprx-vision"}]
           }
         ]
       },
-      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"github.com","fingerprint":"firefox","publicKey":"cm3MNPIRmySoBcEgeH6QEuVyoPbBQyjRhs8UF_swl1E","shortId":"41388e02247a3902","spiderX":"/vLsiCccMXAczIgJ"}}
+      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"wl-12.nodes.ac","fingerprint":"edge","publicKey":"lh3qj3VX335HGH2T3xQ8RHZ4v3zEStbz6ENiPwkILSg","shortId":"cf43c0c197cd464a"}}
     },
     {
       "tag": "direct",

@@ -4,4 +4,4 @@
 #profile-update-interval: 1
 #subscription-userinfo: upload=0; download=0; total=0
 
-vless://00000000-0000-0000-0000-000000000000@127.0.0.1:0?encryption=none&ps=20.06.2026+15%3A04%3A24&security=none&type=tcp#20.06.2026%2015:04:24
+vless://00000000-0000-0000-0000-000000000000@127.0.0.1:0?encryption=none&ps=20.06.2026+15%3A24%3A24&security=none&type=tcp#20.06.2026%2015:24:24

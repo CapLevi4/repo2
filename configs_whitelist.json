@@ -25,13 +25,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "158.160.238.73",
-            "port": 543,
-            "users": [{"id":"1dd5f2be-f124-4f35-9239-8abc042829c2","encryption":"none","flow":"xtls-rprx-vision"}]
+            "address": "cdn9-03.cdn-vkvideo.com",
+            "port": 443,
+            "users": [{"id":"9a2573c5-936f-4f93-8409-e43164793176","encryption":"none","flow":"xtls-rprx-vision"}]
           }
         ]
       },
-      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"max.ru","fingerprint":"firefox","publicKey":"ThDXo5FtAi4EYaioYqogBq_NWCwE4QG0Tu6yKMlrfRk","shortId":"d898401f400ccf67"}}
+      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"cdn9-03.cdn-vkvideo.com","fingerprint":"firefox","publicKey":"2dUnvgWjYo4Xs5T17CfWoImszwB0I6hGHwRxZZEQvQs","shortId":"b0d8f964b7ac8ac3","spiderX":"/api/v1/video/init"}}
     },
     {
       "tag": "direct",

@@ -25,13 +25,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdn9-03.cdn-vkvideo.com",
+            "address": "159.195.60.65",
             "port": 443,
-            "users": [{"id":"9a2573c5-936f-4f93-8409-e43164793176","encryption":"none","flow":"xtls-rprx-vision"}]
+            "users": [{"id":"c897facf-2836-4538-be6e-25386fb49284","encryption":"none","flow":"xtls-rprx-vision"}]
           }
         ]
       },
-      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"cdn9-03.cdn-vkvideo.com","fingerprint":"firefox","publicKey":"2dUnvgWjYo4Xs5T17CfWoImszwB0I6hGHwRxZZEQvQs","shortId":"b0d8f964b7ac8ac3","spiderX":"/api/v1/video/init"}}
+      "streamSettings": {"network":"tcp","security":"reality","realitySettings":{"serverName":"free1.anotherboring.top","fingerprint":"firefox","publicKey":"vTtRZ_FeFQoAigFr_pmVc_O85RaE9H8aVL0SitFYcmI","shortId":"53cd45d26d7b53fe"}}
     },
     {
       "tag": "direct",

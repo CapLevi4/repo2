@@ -1,0 +1,372 @@
+[
+  {
+    "log": {
+      "loglevel": "debug"
+    },
+    "dns": {
+      "queryStrategy": "UseIP",
+      "servers": [
+        "https://1.1.1.1/dns-query",
+        "https://8.8.8.8/dns-query"
+      ]
+    },
+    "inbounds": [
+      {
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ],
+          "routeOnly": false
+        },
+        "tag": "socks"
+      },
+      {
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http",
+        "settings": {
+          "allowTransparent": false
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ],
+          "routeOnly": false
+        },
+        "tag": "http"
+      }
+    ],
+    "policy": {
+      "levels": {
+        "0": {
+          "connIdle": 300,
+          "handshake": 4
+        }
+      }
+    },
+    "remarks": "Обычный",
+    "outbounds": [
+      {
+        "protocol": "freedom",
+        "tag": "direct"
+      },
+      {
+        "tag": "latvia",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "1.2.3.4",
+              "port": 443,
+              "users": [
+                {
+                  "id": "00000000-0000-0000-0000-000000000001",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.microsoft.com",
+            "publicKey": "UMbPEvDbukStlRSU2gY8x4MrNdWR7yzFDFpFXQQr2ks",
+            "shortId": "bbff8c8d",
+            "fingerprint": "chrome"
+          },
+          "sockopt": {
+            "acceptProxyProtocol": true,
+            "tcpKeepAliveIdle": 45,
+            "tcpKeepAliveInterval": 45,
+            "tcpNoDelay": true,
+            "tcpUserTimeout": 15000
+          },
+          "tcpSettings": {}
+        }
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "block"
+      }
+    ],
+    "routing": {
+      "domainMatcher": "hybrid",
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "outboundTag": "direct",
+          "protocol": [
+            "bittorrent"
+          ]
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:gosuslugi.ru",
+            "domain:vk.com",
+            "domain:vk.ru",
+            "domain:yandex.ru",
+            "domain:ya.ru",
+            "domain:ozon.ru",
+            "domain:wildberries.ru",
+            "domain:wb.ru",
+            "domain:rutube.ru",
+            "domain:2gis.ru",
+            "domain:push.apple.com",
+            "domain:api.push.apple.com"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "telegram.org",
+            "t.me",
+            "telegram-cdn.org",
+            "youtube.com",
+            "youtu.be",
+            "googlevideo.com",
+            "ytimg.com",
+            "chatgpt.com",
+            "openai.com",
+            "instagram.com",
+            "cdninstagram.com",
+            "fbcdn.net",
+            "tiktok.com",
+            "tiktokcdn.com",
+            "whatsapp.com",
+            "whatsapp.net",
+            "static.whatsapp.net",
+            "google.com",
+            "googleapis.com",
+            "gstatic.com",
+            "googleusercontent.com"
+          ],
+          "outboundTag": "latvia"
+        }
+      ]
+    }
+  },
+  {
+    "log": {
+      "loglevel": "debug"
+    },
+    "dns": {
+      "queryStrategy": "UseIP",
+      "servers": [
+        "https://1.1.1.1/dns-query",
+        "https://8.8.8.8/dns-query"
+      ]
+    },
+    "inbounds": [
+      {
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ],
+          "routeOnly": false
+        },
+        "tag": "socks"
+      },
+      {
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http",
+        "settings": {
+          "allowTransparent": false
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ],
+          "routeOnly": false
+        },
+        "tag": "http"
+      }
+    ],
+    "policy": {
+      "levels": {
+        "0": {
+          "connIdle": 300,
+          "handshake": 4
+        }
+      }
+    },
+    "remarks": "Обход блокировок",
+    "outbounds": [
+      {
+        "protocol": "freedom",
+        "tag": "direct"
+      },
+      {
+        "tag": "ru-reality",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "93.77.180.233",
+              "port": 8443,
+              "users": [
+                {
+                  "id": "04f35c07-a87d-4afd-8dfd-f922422bd236",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "yandex.ru",
+            "publicKey": "UMbPEvDbukStlRSU2gY8x4MrNdWR7yzFDFpFXQQr2ks",
+            "shortId": "bbff8c8d",
+            "fingerprint": "chrome"
+          },
+          "sockopt": {
+            "acceptProxyProtocol": true,
+            "tcpKeepAliveIdle": 45,
+            "tcpKeepAliveInterval": 45,
+            "tcpNoDelay": true,
+            "tcpUserTimeout": 15000
+          },
+          "tcpSettings": {}
+        }
+      },
+      {
+        "tag": "latvia",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "1.2.3.4",
+              "port": 443,
+              "users": [
+                {
+                  "id": "00000000-0000-0000-0000-000000000001",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "www.microsoft.com",
+            "publicKey": "UMbPEvDbukStlRSU2gY8x4MrNdWR7yzFDFpFXQQr2ks",
+            "shortId": "bbff8c8d",
+            "fingerprint": "chrome"
+          },
+          "sockopt": {
+            "acceptProxyProtocol": true,
+            "tcpKeepAliveIdle": 45,
+            "tcpKeepAliveInterval": 45,
+            "tcpNoDelay": true,
+            "tcpUserTimeout": 15000
+          },
+          "tcpSettings": {}
+        }
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "block"
+      }
+    ],
+    "routing": {
+      "domainMatcher": "hybrid",
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "outboundTag": "direct",
+          "protocol": [
+            "bittorrent"
+          ]
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:gosuslugi.ru",
+            "domain:vk.com",
+            "domain:vk.ru",
+            "domain:yandex.ru",
+            "domain:ya.ru",
+            "domain:ozon.ru",
+            "domain:wildberries.ru",
+            "domain:wb.ru",
+            "domain:rutube.ru",
+            "domain:2gis.ru",
+            "domain:push.apple.com",
+            "domain:api.push.apple.com"
+          ],
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "telegram.org",
+            "t.me",
+            "telegram-cdn.org",
+            "youtube.com",
+            "youtu.be",
+            "googlevideo.com",
+            "ytimg.com",
+            "chatgpt.com",
+            "openai.com",
+            "instagram.com",
+            "cdninstagram.com",
+            "fbcdn.net",
+            "tiktok.com",
+            "tiktokcdn.com",
+            "whatsapp.com",
+            "whatsapp.net",
+            "static.whatsapp.net",
+            "google.com",
+            "googleapis.com",
+            "gstatic.com",
+            "googleusercontent.com"
+          ],
+          "outboundTag": "latvia"
+        },
+        {
+          "type": "field",
+          "network": "tcp,udp",
+          "outboundTag": "ru-reality"
+        }
+      ]
+    }
+  }
+]

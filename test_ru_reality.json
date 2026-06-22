@@ -1,0 +1,111 @@
+{
+  "dns": {
+    "queryStrategy": "UseIP",
+    "servers": [
+      "https://1.1.1.1/dns-query",
+      "https://8.8.8.8/dns-query"
+    ]
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls", "quic"],
+        "routeOnly": false
+      },
+      "tag": "socks"
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": 10809,
+      "protocol": "http",
+      "settings": {
+        "allowTransparent": false
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls", "quic"],
+        "routeOnly": false
+      },
+      "tag": "http"
+    }
+  ],
+  "policy": {
+    "levels": {
+      "0": {
+        "connIdle": 300,
+        "handshake": 4
+      }
+    }
+  },
+  "remarks": "Тест VPS",
+  "outbounds": [
+    {
+      "tag": "ru-reality",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "93.77.180.233",
+            "port": 8443,
+            "users": [
+              {
+                "id": "04f35c07-a87d-4afd-8dfd-f922422bd236",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "yandex.ru",
+          "publicKey": "UMbPEvDbukStlRSU2gY8x4MrNdWR7yzFDFpFXQQr2ks",
+          "shortId": "bbff8c8d",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "tcpKeepAliveIdle": 45,
+          "tcpKeepAliveInterval": 45,
+          "tcpNoDelay": true,
+          "tcpUserTimeout": 15000
+        },
+        "tcpSettings": {}
+      }
+    },
+    {
+      "protocol": "freedom",
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "tag": "block"
+    }
+  ],
+  "routing": {
+    "domainMatcher": "hybrid",
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "protocol": ["bittorrent"]
+      },
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "outboundTag": "ru-reality"
+      }
+    ]
+  }
+}
